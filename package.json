@@ -1,8 +1,8 @@
 {
   "name": "cordova-plugin-imei",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.js",
-  "repository": "https://github.com/staspl/cordova-plugin-imei",
+  "repository": "https://github.com/staspl/cordovatest2",
   "author": "Josh Runge <joshrunge@gmail.com>",
   "license": "MIT",
   "cordova": {
