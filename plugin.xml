@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
            id="com.plugin.test2"
-      version="0.0.3">
+      version="0.0.4">
 
     <name>IMEI</name>
     <description>IMEI plugin for Android</description>
