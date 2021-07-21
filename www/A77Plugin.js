@@ -7,7 +7,7 @@ module.exports = {
 	var options = {};
 	options.message = "TEST msg";
 	options.duration = "long";
-	cordova.exec(success, error, 'ToastyPlugin', 'show', [options]);
+	cordova.exec(success, error, 'A77Plugin', 'get', [options]);
 
         // exec(success, error, "IMEI", "get", [options]);
     }

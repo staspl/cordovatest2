@@ -14,39 +14,6 @@ import android.widget.Toast;
 // Cordova-required packages
 import org.json.JSONException;
 import org.json.JSONObject;
-
-public class ToastyPlugin extends CordovaPlugin {
-  private static final String DURATION_LONG = "long";
-  @Override
-  public boolean execute(String action, JSONArray args,
-    final CallbackContext callbackContext) {
-      // Verify that the user sent a 'show' action
-      if (!action.equals("show")) {
-        callbackContext.error("\"" + action + "\" is not a recognized action.");
-        return false;
-      }
-      String message;
-      String duration;
-      try {
-        JSONObject options = args.getJSONObject(0);
-        message = options.getString("message");
-        duration = options.getString("duration");
-      } catch (JSONException e) {
-        callbackContext.error("Error encountered: " + e.getMessage());
-        return false;
-      }
-      // Create the toast
-      Toast toast = Toast.makeText(cordova.getActivity(), message,
-        DURATION_LONG.equals(duration) ? Toast.LENGTH_LONG : Toast.LENGTH_SHORT);
-      // Display toast
-      toast.show();
-      // Send a positive result to the callbackContext
-      PluginResult pluginResult = new PluginResult(PluginResult.Status.OK);
-      callbackContext.sendPluginResult(pluginResult);
-      return true;
-  }
-}
-
 // }} ------------- Toast test -------------------------
 
 public class A77Plugin extends CordovaPlugin {
@@ -57,8 +24,12 @@ public class A77Plugin extends CordovaPlugin {
         String result = "";
 
         if (action.equals("get")) {
-            TelephonyManager telephonyManager = (TelephonyManager)this.cordova.getActivity().getSystemService(Context.TELEPHONY_SERVICE);
-            result = telephonyManager.getDeviceId();
+		  String message = "Aaaaaaaaaaaa";
+		  Toast toast = Toast.makeText(cordova.getActivity(), message, Toast.LENGTH_LONG );
+		  toast.show();
+		  // Send a positive result to the callbackContext
+		  PluginResult pluginResult = new PluginResult(PluginResult.Status.OK);
+		  result = "OK";
         }
         else {
             status = PluginResult.Status.INVALID_ACTION;
@@ -66,5 +37,4 @@ public class A77Plugin extends CordovaPlugin {
         callbackContext.sendPluginResult(new PluginResult(status, result));
         return true;
     }
-
 }
