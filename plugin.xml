@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
            id="com.plugin.test2"
-      version="0.0.4">
+      version="1.0.6">
 
     <name>A77Plugin</name>
     <description>A77 PAX plugin for Android</description>
