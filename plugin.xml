@@ -4,20 +4,20 @@
            id="com.plugin.test2"
       version="0.0.4">
 
-    <name>IMEI</name>
-    <description>IMEI plugin for Android</description>
+    <name>A77Plugin</name>
+    <description>A77 PAX plugin for Android</description>
     <license>MIT</license>
-    <keywords>cordova,imei</keywords>
+    <keywords>cordova,a77,PAX</keywords>
 
-    <js-module src="www/imei.js" name="IMEIPlugin">
+    <js-module src="www/A77Plugin.js" name="A77Plugin">
         <clobbers target="window.plugins.test2" />
     </js-module>
     <!-- android -->
     <platform name="android">
 
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="IMEI">
-              <param name="android-package" value="com.plugin.test2.IMEIPlugin"/>
+            <feature name="A77Plugin">
+              <param name="android-package" value="com.plugin.test2.A77Plugin"/>
             </feature>
         </config-file>
 
@@ -31,7 +31,7 @@
         </config-file>
       -->
 
-        <source-file src="src/android/IMEIPlugin.java" target-dir="src/com/plugin/IMEI" />
+        <source-file src="src/android/A77Plugin.java" target-dir="src/com/plugin/A77" />
 
     </platform>
 

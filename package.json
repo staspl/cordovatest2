@@ -1,12 +1,12 @@
 {
-  "name": "cordova-plugin-imei",
-  "version": "1.0.4",
+  "name": "cordova-plugin-a77",
+  "version": "1.0.5",
   "main": "index.js",
   "repository": "https://github.com/staspl/cordovatest2",
   "author": "Josh Runge <joshrunge@gmail.com>",
   "license": "MIT",
   "cordova": {
-    "id": "cordova-plugin-imei",
+    "id": "cordova-plugin-a77",
     "platforms": [
       "android"
     ]
