@@ -1,4 +1,4 @@
-var exec = require('cordova/exec');
+// var exec = require('cordova/exec');
 
 module.exports = {
     get: function(success, error, options) {
@@ -10,5 +10,7 @@ module.exports = {
 	cordova.exec(success, error, 'A77Plugin', 'get', [options]);
 
         // exec(success, error, "IMEI", "get", [options]);
-    }
+    },
+
+    getVersion : function() { return "test1"; }
 };
