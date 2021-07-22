@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-a77",
-  "version": "1.0.8",
+  "version": "1.0.10",
   "main": "index.js",
   "repository": "https://github.com/staspl/cordovatest2",
   "author": "Josh Runge <joshrunge@gmail.com>",

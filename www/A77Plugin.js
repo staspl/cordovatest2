@@ -13,10 +13,11 @@ module.exports = {
     },
 
     scanCard: function(success, error, options) {
-	    success ( "A77Plugin.js - scanCard" );
+	    // error("A77Plugin.js - Fail - testonly" );
+	    // success ( "A77Plugin.js - scanCard" );
 	    var options = {};
 	    cordova.exec(success, error, 'A77Plugin', 'scanCard', [options]);
     },
 
-    getVersion : function() { return "v1.1"; }
+    getVersion : function() { return "v1.5"; }
 };

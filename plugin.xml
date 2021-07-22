@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
            id="com.plugin.test2"
-      version="1.0.8">
+      version="1.0.10">
 
     <name>A77Plugin</name>
     <description>A77 PAX plugin for Android</description>
@@ -16,8 +16,8 @@
     <platform name="android">
 
         <!-- 
-        <lib-file src="sdk/integrate_clientsdk-0.0.1-SNAPSHOT.jar" />
         -->
+        <lib-file src="sdk/integrate_clientsdk.jar" />
 
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="A77Plugin">
