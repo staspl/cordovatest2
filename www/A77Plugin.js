@@ -12,5 +12,11 @@ module.exports = {
         // exec(success, error, "IMEI", "get", [options]);
     },
 
-    getVersion : function() { return "test1"; }
+    scanCard: function(success, error, options) {
+	    success ( "A77Plugin.js - scanCard" );
+	    var options = {};
+	    cordova.exec(success, error, 'A77Plugin', 'scanCard', [options]);
+    },
+
+    getVersion : function() { return "v1.1"; }
 };

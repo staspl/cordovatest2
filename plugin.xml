@@ -15,6 +15,10 @@
     <!-- android -->
     <platform name="android">
 
+        <!-- 
+        <lib-file src="sdk/integrate_clientsdk-0.0.1-SNAPSHOT.jar" />
+        -->
+
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="A77Plugin">
               <param name="android-package" value="com.plugin.test2.A77Plugin"/>

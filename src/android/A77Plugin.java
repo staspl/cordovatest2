@@ -24,14 +24,20 @@ public class A77Plugin extends CordovaPlugin {
         String result = "";
 
         if (action.equals("get")) {
-		  String message = "Aaaaaaaaaaaa";
-		  Toast toast = Toast.makeText(cordova.getActivity(), message, Toast.LENGTH_LONG );
-		  toast.show();
-		  // Send a positive result to the callbackContext
-		  PluginResult pluginResult = new PluginResult(PluginResult.Status.OK);
-		  result = "OK";
+		String message = "Aaaaaaaaaaaa";
+		Toast toast = Toast.makeText(cordova.getActivity(), message, Toast.LENGTH_LONG );
+		toast.show();
+		// Send a positive result to the callbackContext
+		PluginResult pluginResult = new PluginResult(PluginResult.Status.OK);
+		result = "OK";
         }
-        else {
+        else if ( action.equals("scanCard") )  {
+		Toast toast = Toast.makeText(cordova.getActivity(), "Scan card", Toast.LENGTH_LONG );
+		toast.show();
+		PluginResult pluginResult = new PluginResult(PluginResult.Status.OK);
+		result = "OK";
+		
+        } else {
             status = PluginResult.Status.INVALID_ACTION;
         }
         callbackContext.sendPluginResult(new PluginResult(status, result));
