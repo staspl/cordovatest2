@@ -19,5 +19,5 @@ module.exports = {
 	    cordova.exec(success, error, 'A77Plugin', 'scanCard', [options]);
     },
 
-    getVersion : function() { return "v1.5"; }
+    getVersion : function() { return "v1.6"; }
 };
