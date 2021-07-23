@@ -16,6 +16,7 @@
     <platform name="android">
 
         <!-- 
+        more options: https://stackoverflow.com/questions/26038026/including-jar-file-into-cordova-plugin
         -->
         <lib-file src="sdk/integrate_clientsdk.jar" />
 
